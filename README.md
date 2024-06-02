@@ -1,6 +1,6 @@
 # Roku ECP Remote Control
 
-This C program allows you to communicate with Roku devices, such as TVs, and simulate a remote control with enhanced access using the Roku External Control Protocol (ECP).
+This C program allows you to communicate with Roku devices, such as TVs, and simulate a remote control with enhanced access using the Roku External Control Protocol (ECP). This program is designed to compile successfully on Linux, Windows, and potentially macOS.
 
 ## Features
 
@@ -24,9 +24,6 @@ This C program allows you to communicate with Roku devices, such as TVs, and sim
    ./rokuecp
    ```
    Running `rokuecp` without arguments will display usage instructions.
-
->[!NOTE]
-> **Note:** This project is tailored for Windows but will likely compile on Linux with some modifications.
 
 ## Configuration
 
