@@ -53,14 +53,10 @@ int main(int argc, char **argv) {
     char buffer[1024];
     sprintf(buffer, "POST /keypress/%s HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\n\r\n", key);
 
-    startWSA();
+    startNetworking();
     SOCKET ConnectSocket = connectSocket(HOST, PORT);
-
     sendRequest(ConnectSocket, buffer);
-
-    // cleanup
-    closesocket(ConnectSocket);
-    WSACleanup();
+    cleanupNetworking(ConnectSocket);
 
     return 0;
 }
