@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra
 LIBS = -lws2_32
-SOURCE = main.c
+SOURCE = main.c src/*.c
 TARGET = rokuecp.exe
 
 all: $(TARGET)
